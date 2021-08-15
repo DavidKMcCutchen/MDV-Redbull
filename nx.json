@@ -1,36 +1,28 @@
 {
   "implicitDependencies": {
-    "package.json": {
-      "dependencies": "*",
-      "devDependencies": "*"
-    },
+    "package.json": { "dependencies": "*", "devDependencies": "*" },
     ".eslintrc.json": "*"
   },
-  "affected": {
-    "defaultBase": "master"
-  },
+  "affected": { "defaultBase": "master" },
   "npmScope": "redbull",
   "tasksRunnerOptions": {
     "default": {
-      "runner": "@nrwl/workspace/tasks-runners/default",
+      "runner": "@nrwl/nx-cloud",
       "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"]
+        "cacheableOperations": ["build", "lint", "test", "e2e"],
+        "accessToken": "ZWE2ZDQ5NGEtY2RlMS00OTY3LTk3ZGYtOTRmOTJlOTg3NmRlfHJlYWQtd3JpdGU=",
+        "canTrackAnalytics": false,
+        "showUsageWarnings": true
       }
     }
   },
   "projects": {
-    "dashboard": {
-      "tags": []
-    },
-    "dashboard-e2e": {
-      "tags": [],
-      "implicitDependencies": ["dashboard"]
-    },
-    "api": {
-      "tags": []
-    },
-    "api-interfaces": {
-      "tags": []
-    }
+    "dashboard": { "tags": [] },
+    "dashboard-e2e": { "tags": [], "implicitDependencies": ["dashboard"] },
+    "api": { "tags": [] },
+    "api-interfaces": { "tags": [] },
+    "core-data": { "tags": [] },
+    "material": { "tags": [] },
+    "ui-login": { "tags": [] }
   }
 }

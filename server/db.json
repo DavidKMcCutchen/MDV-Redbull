@@ -1,0 +1,22 @@
+{
+  "redbulls": [
+    {
+      "id": 1,
+      "name": "Original",
+      "flavor": "Redbull",
+      "seasonal": false
+    },
+    {
+      "id": 2,
+      "name": "Sugar Free",
+      "flavor": "Original",
+      "seasonal": false
+    },
+    {
+      "id": 3,
+      "name": "Tropical Breeze",
+      "flavor": "Coconut, Mango and Pineapple",
+      "seasonal": false
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="col-50" layout="row" layout-align="center center">
+    <redbull-redbull-list
+  [redbulls]="redbulls$ | async"
+  (selected)="selectRedbull($event)"
+  (deleted)="deleteRedbull($event)"
+  ></redbull-redbull-list>
+  </div>
+<div class="col-50" layout="row" layout-align="center center">
+  <redbull-redbull-details
+  [redbull]="selectedRedbull"
+  (saved)="saveRedbull($event)"
+  (cancelled)="cancel()"
+  ></redbull-redbull-details>
+  </div>
+</div>

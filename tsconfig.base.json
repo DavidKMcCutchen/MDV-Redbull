@@ -15,7 +15,10 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@redbull/api-interfaces": ["libs/api-interfaces/src/index.ts"]
+      "@redbull/api-interfaces": ["libs/api-interfaces/src/index.ts"],
+      "@redbull/core-data": ["libs/core-data/src/index.ts"],
+      "@redbull/material": ["libs/material/src/index.ts"],
+      "@redbull/ui-login": ["libs/ui-login/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
